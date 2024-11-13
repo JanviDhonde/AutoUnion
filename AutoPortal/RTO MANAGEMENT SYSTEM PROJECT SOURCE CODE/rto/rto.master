@@ -1,0 +1,58 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="rto.master.cs" Inherits="rto_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body leftmargin="0" rightmargin="0" bottommargin="0" topmargin="0">
+    <form id="form1" runat="server">
+   <div>
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr >
+    <td colspan="2">
+        <asp:Image ID="Image1" runat="server" ImageUrl="~/IMAGES/login.jpg" Height="250px" Width="1000px" />
+    </td>
+    </tr>
+    <tr>
+    <td valign="top" style="background-color:pink";  Width="30%" >
+    <div id="sidebar">
+		<ul>
+			<li>
+				<h2>Categories</h2>
+				<ul>
+				    <li><a href="home.aspx" style="color: black">Home</a></li>
+				    <li><a href="viewLlrApp.aspx" style="color: black" >View LLR Applications</a></li>
+					<li><a href="ExamResult.aspx" style="color: black"  >Exam Result</a></li>
+					<li><a href="IssuingofLearinglicence.aspx" style="color: black">Issue of Learning licence</a></li>
+					<li><a href="IssuingofPerminentLicence.aspx" style="color: black">Issue of permanent licence</a></li>					
+					<li><a href="viewissuedllr.aspx" style="color: black">View issued LLR details</a></li>
+					<li><a href="perminentlicencedetail.aspx" style="color: black">permanent licence details</a></li>
+					<li><a href="renewalllrdetails.aspx" style="color: black">Renewal LLR details</a></li>
+					<li><a href="renewalperdetails.aspx" style="color: black">Renewal PL details</a></li>
+					<li><a href="registrationdetails.aspx" style="color: black">Registration details</a></li>
+					<li><a href="challandetails.aspx" style="color: black">challana details</a></li>
+					<li><a href="pymentdetails.aspx" style="color: black">payment details</a></li>
+					<li><a href="employeedetail.aspx" style="color: black" >Employee Details</a></li>
+					<li><a href="changepwd.aspx" style="color: black">Change Password</a></li>
+					<li><a href="../HOME/home.aspx"  style="color: black">Logout</a></li>
+					
+				</ul>
+			</li>
+			
+		</ul>
+	</div>
+	</td>
+	<td valign="top" Width="70%">
+	
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+        </td>
+        </tr>
+        </table>
+    </div>
+        
+    </form>
+</body>
+</html>

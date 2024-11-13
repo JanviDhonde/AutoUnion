@@ -1,0 +1,53 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="HOME_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body leftmargin="0" rightmargin="0" bottommargin="0" topmargin="0">
+    <form id="form1" runat="server">
+    <div>
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr >
+    <td colspan="2">
+        <asp:Image ID="Image1" runat="server" ImageUrl="~/IMAGES/license.gif" Height="200px" Width="1000px" />
+      <asp:Label ID="Label1" runat="server" Font-Size="XX-Large" ForeColor="White"
+            Text="<marquee><h1>Welcome to Road Transpot<h1></marquee>" BackColor="Olive" Font-Bold="True"></asp:Label>
+    </td>
+    </tr>
+    <tr>
+    <td valign="top" style="background-image:url('../IMAGES/back.gif')";Width:"30%" Height="400">
+      <div id="sidebar">
+		<ul>
+			<li>
+				<h2 style="color: #FFFF00">Categories</h2>
+				<ul>
+				    <li><a href="home.aspx" style="color: #000000">Home</a></li>
+					<li><a href="rto.aspx" style="color: #000000">RTO</a></li>
+					<li><a href="EMPLOYEES.aspx" style="color: #000000">Employee</a></li>
+					<li><a href="examwelcome.aspx" style="color: #000000"  >Apply For LLR</a></li>
+					<li><a href="Aboutus.aspx" style="color: #000000">About Us</a></li>
+					<li><a href="contactus.aspx" style="color: #000000">Contact Us</a></li>
+					
+							
+					
+				</ul>
+			</li> 
+                
+			
+			</ul>
+			</div>
+    </td>
+    <td style="background-image:url('../IMAGES/neture.jpg')" valign="top" width="70%" height="400">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </td>
+    </tr>
+    </table>
+        
+    </div>
+    </form>
+</body>
+</html>
